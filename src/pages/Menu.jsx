@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import Button from 'react-bootstrap/Button'; 
+import { Link } from 'react-router-dom';
 
 function Menu() {
     return(
@@ -7,27 +8,27 @@ function Menu() {
         <h1>Gestión de Empleados</h1>
         <section>
             <h2>Insertar nuevo Empleado</h2>
-            <a href="/insertar">
+            <Link to="/insertar">
                 <Button variant="primary">Crear</Button>
-            </a>
+            </Link>
         </section>
         <section>
             <h2>Buscar Empleado</h2>
-            <a href="/buscar">
+            <Link to="/buscar">
                 <Button variant="success">Buscar</Button>
-            </a>
+            </Link>
         </section>
         <section>
             <h2>Editar Empleado</h2>
-            <a href="/editar">
+            <Link to="/editar">
                 <Button variant="warning">Editar</Button>
-            </a>
+            </Link>
         </section>
         <section>
             <h2>Eliminar Empleado</h2>
-            <a href="/eliminar">
+            <Link to="/eliminar">
                 <Button variant="danger">Eliminar</Button>
-            </a>
+            </Link>
         </section>
         </>
     )
