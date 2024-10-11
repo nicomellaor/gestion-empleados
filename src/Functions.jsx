@@ -1,5 +1,16 @@
 import axios from "axios";
 
+export const getAllAxios = async () => {
+    var ruta = "https://66fd5caa699369308954e548.mockapi.io/users";
+    try {
+        const response = await axios.get(ruta);
+        return response.data;
+    }
+    catch (error) {
+        console.log(error.response);    
+    }
+};
+
 export const getAxios = async () => {
     var ruta = "https://66fd5caa699369308954e548.mockapi.io/users";
     var nro = document.getElementById("nro").value;
@@ -9,7 +20,6 @@ export const getAxios = async () => {
     }
     catch (error) {
         console.log(error.response);    
-        return null;
     }
 };
 
@@ -54,16 +64,4 @@ export const deleteAxios = () => {
     axios.delete(ruta+"/"+nro).then( response => {
         console.log(response);
     })
-};
-
-export const buscarID = async () => {
-    try {
-        const data = await getAxios();
-        console.log("ID encontrado");
-        return True;
-    }
-    catch(error){
-        console.log(error.response);    
-        return null;
-    }
 };

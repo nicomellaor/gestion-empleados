@@ -3,6 +3,10 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 
 function TarjetaEmpleado({employee}){
+    if(!employee){
+        return null;
+    }
+    
     return (
         <>
         <Card style={{ width: '18rem' }}>
