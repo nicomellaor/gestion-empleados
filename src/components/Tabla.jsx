@@ -17,8 +17,8 @@ function Tabla(){
 
     return(
         <>
-            <Table striped bordered hover responsive>
-                <thead>
+            <Table bordered hover responsive>
+                <thead className='table-secondary'>
                     <tr>
                         <th>ID</th>
                         <th>Nombre</th>

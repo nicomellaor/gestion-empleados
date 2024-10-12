@@ -21,6 +21,7 @@ function TarjetaEmpleado({employee}){
                 <ListGroup.Item><b>Puesto:</b> {employee.job}</ListGroup.Item>
                 <ListGroup.Item><b>Salario:</b> ${employee.salary}</ListGroup.Item>
                 <ListGroup.Item><b>Teléfono:</b> {employee.number}</ListGroup.Item>
+                <ListGroup.Item><b>Correo:</b> {employee.email}</ListGroup.Item>
             </ListGroup>
         </Card>
         </>

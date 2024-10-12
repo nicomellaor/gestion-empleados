@@ -10,9 +10,9 @@ function Menu() {
     return(
         <>
         <h1>Gestión de Empleados</h1>
-        <Container>
+        <Container fluid>
             <Row>
-                <Col>
+                <Col xs={6} className="rounded shadow">
                     <h2>Menú</h2>
                     <section>
                         <h3>Insertar Empleado</h3>
@@ -39,7 +39,7 @@ function Menu() {
                         </Link>
                     </section>
                 </Col>
-                <Col>
+                <Col xs={6}>
                     <h2>Tabla</h2>
                     <Tabla></Tabla>
                 </Col>

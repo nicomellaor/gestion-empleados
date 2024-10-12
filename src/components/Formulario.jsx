@@ -18,6 +18,8 @@ function Formulario() {
                 <Form.Control id="salary" type="number" placeholder="Salary"/>
             <h4>Teléfono</h4>
                 <Form.Control id="number" type="text" placeholder="Phone-number"/>
+            <h4>Correo</h4>
+                <Form.Control id="email" type="email" placeholder="Email"/>
             <h4>Foto</h4>
                 <Form.Control id="photo" type="url" placeholder="Photo URL"/>
         </>

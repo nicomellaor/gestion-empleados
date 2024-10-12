@@ -33,6 +33,7 @@ export const postAxios = () => {
         "job": document.getElementById("job").value,
         "salary": document.getElementById("salary").valueAsNumber,
         "number": document.getElementById("number").value,
+        "email": document.getElementById("email").value,
         "photo": document.getElementById("photo").value
     };
     axios.post(ruta, employee).then(response => {
@@ -51,6 +52,7 @@ export const putAxios = () => {
         "job": document.getElementById("job").value,
         "salary": document.getElementById("salary").valueAsNumber,
         "number": document.getElementById("number").value,
+        "email": document.getElementById("email").value,
         "photo": document.getElementById("photo").value
     };
     axios.put(ruta+"/"+nro, employee).then(response => {
