@@ -9,11 +9,12 @@ import Tabla from '../components/Tabla';
 function Menu() {
     return(
         <>
-        <h1>Gestión de Empleados</h1>
+        <h1 className='mb-5'>Gestión de Empleados</h1>
         <Container fluid>
             <Row>
-                <Col xs={6} className="rounded shadow">
+                <Col xs={6}>
                     <h2>Menú</h2>
+                    <div className="rounded shadow py-3">
                     <section>
                         <h3>Insertar Empleado</h3>
                         <Link to="/insertar">
@@ -38,6 +39,7 @@ function Menu() {
                             <Button variant="danger">Eliminar</Button>
                         </Link>
                     </section>
+                    </div>
                 </Col>
                 <Col xs={6}>
                     <h2>Tabla</h2>
