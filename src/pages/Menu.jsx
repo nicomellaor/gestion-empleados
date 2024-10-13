@@ -11,7 +11,7 @@ function Menu() {
         <>
         <div className='mb-3'>
             <h1>Gestión de Empleados</h1>
-            <img src="/gestion-empleados.png" alt="gestion-empleados" width="80px"></img>
+            <img src="gestion-empleados.png" alt="gestion-empleados" width="80px"></img>
         </div> 
         <Container fluid>
             <Row>
