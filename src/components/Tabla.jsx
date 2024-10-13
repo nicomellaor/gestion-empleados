@@ -22,6 +22,7 @@ function Tabla(){
                     <tr>
                         <th>ID</th>
                         <th>Nombre</th>
+                        <th>Puesto</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,6 +30,7 @@ function Tabla(){
                        <tr key={employee.id}>
                             <td>{employee.id}</td>
                             <td>{employee.name}</td>
+                            <td>{employee.job}</td>
                        </tr> 
                     ))}
                 </tbody>
