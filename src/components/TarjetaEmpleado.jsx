@@ -18,6 +18,7 @@ function TarjetaEmpleado({employee}){
                 <ListGroup.Item><b>ID:</b> {employee.id}</ListGroup.Item>
                 <ListGroup.Item><b>Fecha de nacimiento:</b> {employee.birthdate}</ListGroup.Item>
                 <ListGroup.Item><b>Sexo:</b> {employee.sex}</ListGroup.Item>
+                <ListGroup.Item><b>Ciudad:</b> {employee.city}</ListGroup.Item>
                 <ListGroup.Item><b>Puesto:</b> {employee.job}</ListGroup.Item>
                 <ListGroup.Item><b>Salario:</b> ${employee.salary}</ListGroup.Item>
                 <ListGroup.Item><b>Teléfono:</b> {employee.number}</ListGroup.Item>
