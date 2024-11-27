@@ -13,7 +13,7 @@ function Tabla(){
         };
 
         ObtenerDatos();
-    }, []);
+    }, [datos]);
 
     return(
         <>

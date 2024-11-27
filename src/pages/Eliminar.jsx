@@ -3,12 +3,15 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import React, { useState } from 'react';
 import { deleteAxios } from '../Functions';
+import { useNavigate } from 'react-router-dom';
 
 function Eliminar() {
     const [nro, setNro] = useState('');
+    const navigate = useNavigate();
 
     const handleDelete = async () => {
         deleteAxios(nro);
+        navigate('/');
     }
     return(
         <>

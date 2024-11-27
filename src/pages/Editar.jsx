@@ -3,14 +3,17 @@ import Form from 'react-bootstrap/Form';
 import React, { useState } from 'react';
 import Formulario from '../components/Formulario';
 import { putAxios } from '../Functions';
+import { useNavigate } from 'react-router-dom';
 
 function Editar() {
     const [nro, setNro] = useState('');
+    const navigate = useNavigate();
 
     const handlePut = async (form) => {
         try {
             putAxios(nro, form);
             console.log("Datos enviados correctamente")
+            navigate('/');
         } catch (error){
             console.log(error.response);
         }
