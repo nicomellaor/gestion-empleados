@@ -19,10 +19,10 @@ function Buscar() {
             <h1>Buscar empleado</h1>
             <section>
                 <h4>ID</h4>
-                <Form.Control type="text" value={nro} onChange={(e) => setNro(e.target.value)}/>
+                <Form.Control className="w-50 mx-auto" type="text" placeholder="ID" value={nro} onChange={(e) => setNro(e.target.value)}/>
             </section>
             <section>
-                <Button variant="secondary" onClick={ObtenerDatos}>Buscar</Button>
+                <Button variant="secondary" onClick={ObtenerDatos}><i className="bi bi-search"></i> Buscar</Button>
             </section>
             <TarjetaEmpleado employee={data}/>
         </>

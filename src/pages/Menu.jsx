@@ -14,37 +14,37 @@ function Menu() {
             <img src="gestion-empleados.png" alt="gestion-empleados" width="80px"></img>
         </div> 
         <Container fluid>
-            <Row>
-                <Col xs={6}>
+            <Row className='justify-content-center'>
+                <Col xs={4}>
                     <h2 className="mb-4">Menú</h2>
-                    <div className="rounded shadow py-3">
+                    <div className="rounded shadow py-3 bg-light">
                     <section>
                         <h3>Insertar Empleado</h3>
                         <Link to="/insertar">
-                            <Button variant="primary">Crear</Button>
+                            <Button variant="primary"><i className="bi bi-person-plus-fill"></i> Crear</Button>
                         </Link>
                     </section>
                     <section>
                         <h3>Buscar Empleado</h3>
                         <Link to="/buscar">
-                            <Button variant="success">Buscar</Button>
+                            <Button variant="success"><i className="bi bi-search"></i> Buscar</Button>
                         </Link>
                     </section>
                     <section>
                         <h3>Editar Empleado</h3>
                         <Link to="/editar">
-                            <Button variant="warning">Editar</Button>
+                            <Button variant="warning"><i className="bi bi-pencil-square"></i> Editar</Button>
                         </Link>
                     </section>
                     <section>
                         <h3>Eliminar Empleado</h3>
                         <Link to="/eliminar">
-                            <Button variant="danger">Eliminar</Button>
+                            <Button variant="danger"><i className="bi bi-trash"></i> Eliminar</Button>
                         </Link>
                     </section>
                     </div>
                 </Col>
-                <Col xs={6}>
+                <Col xs={4}>
                     <h2 className="mb-4">Tabla</h2>
                     <Tabla></Tabla>
                 </Col>

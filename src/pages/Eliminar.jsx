@@ -18,10 +18,10 @@ function Eliminar() {
             <h1>Eliminar empleado</h1>
             <section>
                 <h4>ID</h4>
-                <Form.Control type="text" value={nro} onChange={(e) => setNro(e.target.value)}/>
+                <Form.Control className="w-50 mx-auto" type="text" placeholder="ID" value={nro} onChange={(e) => setNro(e.target.value)}/>
             </section>
             <section>
-                <Button variant="danger" onClick={handleDelete}>Eliminar</Button>
+                <Button variant="danger" onClick={handleDelete}><i className="bi bi-trash"></i> Eliminar</Button>
             </section>
         </>
     )

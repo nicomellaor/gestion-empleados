@@ -27,7 +27,7 @@ function Tabla(){
                 </thead>
                 <tbody>
                     {datos.map((employee) => (
-                       <tr key={employee.id}>
+                       <tr className='table-light' key={employee.id}>
                             <td>{employee.id}</td>
                             <td>{employee.name}</td>
                             <td>{employee.job}</td>

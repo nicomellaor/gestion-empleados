@@ -22,7 +22,7 @@ function Editar() {
         <>
             <h1>Editar empleado</h1>
             <h4>ID</h4>
-            <Form.Control type="text" placeholder="ID" value={nro} onChange={(e) => setNro(e.target.value)}/>
+            <Form.Control className="w-50 mx-auto mb-4" type="text" placeholder="ID" value={nro} onChange={(e) => setNro(e.target.value)}/>
             <Formulario onSubmit={handlePut}/>
         </>
     )

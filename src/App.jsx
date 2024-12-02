@@ -1,5 +1,6 @@
-import './App.css'
-import Router from './components/Router.jsx'
+import './App.css';
+import Router from './components/Router.jsx';
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function App() {
 
