@@ -1,12 +1,13 @@
-import './App.css';
-import Router from './components/Router.jsx';
-import "bootstrap-icons/font/bootstrap-icons.css";
+import './App.css'
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
 
 function App() {
-
   return (
     <>
-      <Router></Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   )
 }

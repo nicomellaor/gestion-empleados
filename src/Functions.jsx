@@ -1,44 +1,49 @@
 import axios from "axios";
+var ruta = "https://serious-perri-uautonoma-1d5297c7.koyeb.app/api/employees";
 
 export const getAllAxios = async () => {
-    var ruta = "https://serious-perri-uautonoma-1d5297c7.koyeb.app/api/employees";
     try {
         const response = await axios.get(ruta);
         return response.data.employee;
     }
     catch (error) {
-        console.log(error.response);    
+        console.log(error.response ? error.response : error.message);    
     }
 };
 
 export const getAxios = async (nro) => {
-    var ruta = "https://serious-perri-uautonoma-1d5297c7.koyeb.app/api/employees";
     try {
         const response = await axios.get(`${ruta}?id=${nro}`);
         return response.data.employee;
     }
     catch (error) {
-        console.log(error.response);    
+        console.log(error.response ? error.response : error.message);    
     }
 };
 
-export const postAxios = (employee) => {
-    var ruta = "https://serious-perri-uautonoma-1d5297c7.koyeb.app/api/employees";
-    axios.post(ruta, employee).then(response => {
+export const postAxios = async (employee) => {
+    try {
+        const response = await axios.post(ruta, employee);
         console.log(response);
-    })
+    } catch (error) {
+        console.log(error.response ? error.response : error.message);
+    }
 };
 
-export const putAxios = (nro, employee) => {
-    var ruta = "https://serious-perri-uautonoma-1d5297c7.koyeb.app/api/employees";
-    axios.put(`${ruta}?id=${nro}`, employee).then(response => {
+export const putAxios = async (nro, employee) => {
+    try {
+        const response = await axios.put(`${ruta}?id=${nro}`, employee);
         console.log(response);
-    })
+    } catch (error) {
+        console.log(error.response ? error.response : error.message);
+    }
 };
 
-export const deleteAxios = (nro) => {
-    var ruta = "https://serious-perri-uautonoma-1d5297c7.koyeb.app/api/employees";
-    axios.delete(`${ruta}?id=${nro}`).then( response => {
+export const deleteAxios = async (nro) => {
+    try {
+        const response = await axios.delete(`${ruta}?id=${nro}`);
         console.log(response);
-    })
+    } catch (error) {
+        console.log(error.response ? error.response : error.message);
+    }
 };
