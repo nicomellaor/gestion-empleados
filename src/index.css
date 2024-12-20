@@ -8,22 +8,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.form-control {
-  background-color: #242424;
-  color:#fff;
-  border: 1px solid #696868;
-}
-
-.form-control::placeholder {
-  color: #696868;
-}
-
-.form-control:focus {
-  background-color: #242424;
-  color:#fff;
-  border: 1px solid #696868;
-}
-
 .employee-card {
   display: flex;
   flex-direction: column;

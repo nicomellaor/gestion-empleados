@@ -15,6 +15,7 @@ function EmployeeCard({ employee }){
                 <p className="mb-1"><b>Id:</b> {employee.id}</p>
                 <p className="mb-1"><b>Salario:</b> ${employee.salary}</p>
                 <p className="mb-1"><b>Ciudad:</b> {employee.city}</p>
+                <p className="mb-1"><b>Sexo:</b> {employee.sex}</p>
                 <p className="mb-1"><b>DOB:</b> {employee.birthdate}</p>
                 <p className="mb-1"><b>Teléfono:</b> {employee.number}</p>
                 <p className="mb-1"><b>Email:</b> {employee.email}</p>
