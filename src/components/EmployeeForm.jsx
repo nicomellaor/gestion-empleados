@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import { useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 
-function EmployeeForm( {onSubmit} ) {
+function EmployeeForm( {initialData, onSubmit} ) {
     const [validated, setValidated] = useState(false);
     const [form, setForm] = useState({
         name: '',
@@ -16,6 +17,13 @@ function EmployeeForm( {onSubmit} ) {
         email: '',
         photo: '',
     });
+
+    useEffect(() => {
+        if (initialData) {
+            setForm(initialData);
+        }
+    }, [initialData]
+    );
 
     const handleSubmit = (event) => {
         event.preventDefault();
