@@ -7,3 +7,39 @@ body {
   color: #fff;
   font-family: "Poppins", sans-serif;
 }
+
+.form-control {
+  background-color: #242424;
+  color:#fff;
+  border: 1px solid #696868;
+}
+
+.form-control::placeholder {
+  color: #696868;
+}
+
+.form-control:focus {
+  background-color: #242424;
+  color:#fff;
+  border: 1px solid #696868;
+}
+
+.employee-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  width: 300px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  color: #333;
+}
+
+.employee-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}

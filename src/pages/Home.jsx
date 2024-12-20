@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Home() {
     return (
       <>
-        <div className='d-flex justify-content-center align-items-center text-center flex-column mt-5 mb-5'>
+        <div className='d-flex justify-content-center align-items-center text-center flex-column my-5'>
             <h1>Software de Gestión de Empleados</h1>
             <img src="profile.png" width="50px"></img>
             <DropdownButton id="dropdown-button-drop-down-centered" title="Gestionar" className='mt-2' variant="light"> 
